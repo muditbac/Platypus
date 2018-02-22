@@ -309,6 +309,7 @@ class Algorithm(object):
                            type(self).__name__,
                            self.nfe,
                            datetime.timedelta(seconds=time.time()-start_time))
+                last_log = self.nfe
 
             if callback is not None:
                 callback(self)
